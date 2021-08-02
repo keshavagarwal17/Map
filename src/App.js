@@ -38,6 +38,7 @@ const App = () => {
   const handleChange = ()=>{
     let val = document.getElementById("city").value;
     map.current.setCenter(centers[val])
+    map.current.setZoom(zoom)
     setPopulation(populations[val]);
   }
 
